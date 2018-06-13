@@ -1,0 +1,30 @@
+Just another C-library...
+=========================
+
+Libraries
+---------
+* common
+* character
+* console
+* database_postgresql
+* datetime
+* directory
+* error
+* file
+* memory
+* number
+* parameter
+* string
+* stringbuffer
+* system
+
+Examples
+--------
+* copyright
+* database
+* exception
+* file
+* number
+* parameter
+* string
+* stringbuffer
