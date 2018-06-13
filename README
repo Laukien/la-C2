@@ -3,28 +3,42 @@ Just another C-library...
 
 Libraries
 ---------
-* common
+* atimic
+* boolean
 * character
+* config
 * console
-* database_postgresql
 * datetime
 * directory
-* error
+* directorylist
 * file
+* filecopy
+* filelist
 * memory
+* message
+* (num)
 * number
-* parameter
+* process
+* (str)
 * string
+* stringarray
 * stringbuffer
+* stringlist
+* stringmap
 * system
+* thread
 
 Examples
 --------
-* copyright
-* database
-* exception
+* array
+* atomic
+* config
+* console
+* directory
 * file
+* list
+* memory
 * number
-* parameter
+* process
 * string
-* stringbuffer
+* thread
