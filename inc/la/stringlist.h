@@ -20,7 +20,7 @@
 
 typedef struct la_stringlist stringlist_t;
 
-stringlist_t *stringlist_init();
+stringlist_t *stringlist_init(void);
 void stringlist_add(stringlist_t *self, const char *value);
 void stringlist_addUnique(stringlist_t *self, const char *value);
 boolean_t stringlist_exists(stringlist_t *self, const char *value);
