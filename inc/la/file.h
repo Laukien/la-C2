@@ -40,7 +40,7 @@ char *file_getName(const char *file);
 /*
  * returns a valid temp-file
  */
-char *file_getTemp();
+char *file_getTemp(void);
 /*
  * returns the szie of the file
  */
