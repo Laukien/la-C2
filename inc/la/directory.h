@@ -27,6 +27,6 @@
 boolean_t directory_create(const char *directoryname);
 boolean_t directory_exists(const char *directoryname);
 char *directory_getName(const char *filename);
-char *directory_getTemp();
+char *directory_getTemp(void);
 
 #endif
