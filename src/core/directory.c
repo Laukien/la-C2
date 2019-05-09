@@ -97,7 +97,7 @@ char *directory_getName(const char *filename) {
 	return name;
 }
 
-char *directory_getTemp() {
+char *directory_getTemp(void) {
 	char *dir; /* directory */
 
 #ifdef __WIN32
