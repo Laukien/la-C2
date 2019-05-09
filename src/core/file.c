@@ -82,7 +82,7 @@ char *file_getName(const char *file) {
 	return name;
 }
 
-char *file_getTemp() {
+char *file_getTemp(void) {
 	time_t t; /* time structure */
 	int pid; /* id of current process */
 	char *pid_s; /* process-id as string */
