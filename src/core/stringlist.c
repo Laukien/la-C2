@@ -45,7 +45,7 @@ stringlist_t *stringlist_getNode(stringlist_t *self, unsigned int index) {
 	return NULL;
 }
 
-stringlist_t *stringlist_init () {
+stringlist_t *stringlist_init(void) {
 	stringlist_t *self;
 	
 	self = (stringlist_t*)malloc(sizeof(stringlist_t));
