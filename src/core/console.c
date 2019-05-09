@@ -23,7 +23,7 @@
 #endif
 #include <la/console.h>
 
-void console_clear() {
+void console_clear(void) {
 #ifdef __WIN32
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     COORD coordScreen = {0, 0};
@@ -51,7 +51,7 @@ void console_clear() {
 #endif
 }
 
-int console_getWidth() {
+int console_getWidth(void) {
 #ifdef __WIN32
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     CONSOLE_SCREEN_BUFFER_INFO csbi;
@@ -69,7 +69,7 @@ int console_getWidth() {
 #endif
 }
 
-int console_getHeight() {
+int console_getHeight(void) {
 #ifdef __WIN32
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     CONSOLE_SCREEN_BUFFER_INFO csbi;
@@ -103,7 +103,7 @@ void console_setCursor(int x, int y) {
 }
 
 #ifdef NOT_IMPLEMENTED
-const char *getTty() {
+const char *getTty(void) {
     const char *dev;
     dev = ttyname(STDIN_FILENO);
     if (!dev) dev = ttyname(STDOUT_FILENO);
@@ -113,7 +113,7 @@ const char *getTty() {
     return dev;
 }
 
-int console_getPositionX() {
+int console_getPositionX(void) {
 #ifdef __WIN32
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     CONSOLE_SCREEN_BUFFER_INFO csbi;
@@ -142,7 +142,7 @@ int console_getPositionX() {
 #endif
 }
 
-int console_getPositionY() {
+int console_getPositionY(void) {
 #ifdef __WIN32
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     CONSOLE_SCREEN_BUFFER_INFO csbi;
@@ -162,7 +162,7 @@ int console_getPositionY() {
 #endif
 
 /*int console_getKey(int byte, int second) {*/
-int console_getKey() {
+int console_getKey(void) {
 #ifdef __WIN32
     DWORD mode;
     DWORD cc;
