@@ -71,7 +71,7 @@ boolean_t directory_exists(const char *name) {
         errno = 0;
 		return boolean_false;
 	}
-	return (st.st_mode & S_IFDIR);
+	return (st.st_mode & S_IFDIR) ? boolean_true : boolean_false;
 #endif
 }
 
