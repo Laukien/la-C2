@@ -102,7 +102,7 @@ extern "C" {
 #define CONSOLE_BG_WHITE		"\033[1;47m"
 
 
-void console_clear();
+void console_clear(void);
 /* not implemented yet
 int console_getPositionY();
 int console_getPositionX();
@@ -113,14 +113,14 @@ int console_getPositionX();
  *
  * @return size
  */
-int console_getWidth();
+int console_getWidth(void);
 
 /*
  * returns the height of the terminal window
  *
  * @return size
  */
-int console_getHeight();
+int console_getHeight(void);
 
 /*
  * sets the cursor to given position
@@ -138,7 +138,7 @@ void console_setCursor(int x, int y);
  * @return character which has been read
  */
 /*int console_getKey(int byte, int second);*/
-int console_getKey();
+int console_getKey(void);
 
 /*
  * writes a colored string onto the screen
