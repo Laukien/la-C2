@@ -53,7 +53,7 @@ boolean_t file_exists(const char *filename) {
         errno = 0;
 		return boolean_false;
 	}
-	return (st.st_mode & S_IFREG);
+	return (st.st_mode & S_IFREG) ? boolean_true : boolean_false;
 }
 
 boolean_t file_remove(const char *filename) {
